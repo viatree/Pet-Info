@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+	<title>Pet-Info</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="application/x-javascript">
+		addEventListener("load", function() {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+
+	</script>
+	<!meta charset utf="8">
+		<!--bootstrap-->
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+		<!--coustom css-->
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+		<!--script-->
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+		<script type="text/javascript">
+			var firebaseConfig = {
+				apiKey: "AIzaSyCSoGwDYrQetHRAzqMnXSmhCQnq8EPhwNA",
+				authDomain: "blogpets-071299.firebaseapp.com",
+				databaseURL: "https://blogpets-071299.firebaseio.com",
+				projectId: "blogpets-071299",
+				storageBucket: "blogpets-071299.appspot.com",
+				messagingSenderId: "452893215818",
+				appId: "1:452893215818:web:eab2dbfd4902b8f24eeab3",
+				measurementId: "G-R3JQWS0XT1"
+			};
+			// Initialize Firebase
+			firebase.initializeApp(firebaseConfig);
+
+		</script>
+
+		<!--fonts-->
+		<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<!--script-->
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event) {
+					event.preventDefault();
+					$('html,body').animate({
+						scrollTop: $(this.hash).offset().top
+					}, 900);
+				});
+			});
+
+		</script>
+</head>
+
+<body>
+	<div class="logo">
+						<h1><a href="index.html">KLIK HERE<span class="hlf"> TO GO BACK</span></a>
+					</h1>
+					</div>
+						<div class="clearfix"></div>
+						<div class="clearfix"></div>
+					</nav>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--header-->
+	<!--content		<script type="text/javascript">
+		function klik(){
+			var nama = document.getElementById('name').value;
+			var email = document.getElementById('mail').value;
+			var textarea = document.getElementById('message').value;
+			var address = document.getElementById('address').value;
+			var checked = document.getElementById('ok').checked;
+			if (nama == "" || email == "" || checked == "" || textarea == ""|| address == "") {
+				window.alert("Please fill in the data correctly"); 
+			}
+			else {
+		window.alert("Successful! We will send an email for further information");
+	}
+}
+
+	// function donate(){
+	// 	var namaq = document.getElementById('nama').value;
+	// 	var emaill = document.getElementById('email').value;
+	// 	var norek = document.getElementById('norek').value;
+	// 	var location = document.getElementById('lokasi')value;
+	// 	var pricemax = document.getElementById('paramax').value;
+	// 	var pricemin = document.getElementById('pramin').value;
+	// 	var result = cofirm("u sure?");
+	// 	if (result == false) {
+	// 		window.alert("ada yang kurang");
+	// 	}
+	// 	else{
+	// 		window.alert("terimakasih suda melakukan donasi! kami akan mengirim email tentang info lebih kajut")
+	// 	}
+	// }
+		</script>-->
+
+	<div class="about-pg">
+		<h3>Form</h3>
+		<div class="container">
+			<div class="few-words">
+				<h3>A few words about us.</h3>
+				<br>
+				<div class="few-text">
+					<img src="./images/head.jpg" class="img-responsive" />
+					<img src="./images/head.jpg" class="img-responsive" />
+					<div class="col-md-6 lt">
+						<div class="choose-us">
+							<h3>Volunteer Etuique </h3>
+							<ul>
+								<li>
+									<div class="folt">
+										<div class="container">
+											<p>
+												Volunteering for a cause close to your heart is an incredibly rewarding experience. Whether it’s a financial donation or a few hours spent working in a shelter, volunteering is good for the soul. No matter how you are able to help, know that it makes a difference in the lives of the animals. Although volunteers are not paid, they must still respect the rules of the organization they work in. Each facility will have its own requirements and procedures, but there are some common etiquettes that are appreciated anywhere you go.
+											</p>
+											<br>
+										</div>
+										<div class="clearfix"></div>
+								</li>
+								<li class="text-ul">
+									<div class="folt">
+										<div class="container">
+											<h4 style="color: #C0C0C0;">Be Professional</h4>
+											<br>
+											<p>
+												Even though you’re working with animals, dressing in raggedy, dirty clothes isn’t acceptable. Be courteous and respectful of other staff and volunteers. Don’t use profanity or spend time complaining. Remember that you are representing the organization you’re volunteering for. They are dependent on donations and grants and you never know who may be watching. Working relationships between shelters and other groups can be damaged by an unthinking or careless volunteer.
+											</p>
+											<br>
+										</div>
+										<div class="clearfix"></div>
+								</li>
+								<li class="text-ul">
+									<div class="folt">
+										<div class="container">
+											<h4 style="color: #C0C0C0;">Respect the Animals</h4>
+											<br>
+											<p>
+												A shelter environment can be stressful for many animals. Be aware of how your actions affect them. Don’t make sudden movements, yell, or crowd any animal. You want to make their lives better, not add to their fear.
+											</p>
+											<br>
+										</div>
+										<div class="clearfix"></div>
+								</li>
+								<br>
+								<li class="text-ul">
+									<div class="folt">
+										<div class="container">
+											<h4 style="color: #C0C0C0;">No Smoking</h4>
+											<br>
+											<p>
+												If you must smoke, do so only in a designated area. If there is no marked smoking area, ask the staff. Dispose of your cigarettes in an appropriate receptacle after making sure they are extinguished. Never smoke around the animals. This includes while walking them outside or if transporting them in a vehicle. Secondhand smoke can cause or exacerbate health problems in animals much like humans. For some animals, such as birds and exotics, smoke is toxic. If possible, wait until you’re at home.
+											</p>
+											<br>
+										</div>
+										<div class="clearfix"></div>
+								</li>
+								<br>
+								<li class="text-ul">
+									<div class="folt">
+										<div class="container">
+											<h4 style="color: #C0C0C0;">Follow the Rules</h4>
+											<br>
+											<p>
+												A great deal of time, money and effort goes into establishing an animal rescue facility or organization. There are licensing and permitting criteria, insurance considerations, and legal issues. The owner or Board of Directors sets policies to ensure compliance with all of these. It is their job to protect the facility and organization so that it can help animals not only today but for many years to come. The rules are in place for the safety of the animals and humans and to allow for the shelter to continue to operate into the future. As a volunteer, you will not be privy to all aspects of shelter management. You will be given the rules and be expected to follow them whether you agree or not. Remember, rescue work is not about you, it’s about the animals. You must do what’s best for them. Violating a shelter or organization’s rules can jeopardize its ability to operate. Volunteers must trust in the management and respect its policies. The rules truly do exist for a reason.or crowd any animal. You want to make their lives better, not add to their fear.
+											</p>
+											<br>
+										</div>
+										<div class="clearfix"></div>
+								</li>
+								<br>
+								<li class="text-ul">
+									<div class="folt">
+										<div class="container">
+											<h4 style="color: #C0C0C0;">Safety First</h4>
+											<br>
+											<p>
+												Working around animals comes with the risk of injury. As previously noted, shelter life can be stressful and scared animals can be unpredictable. You must be aware of how your actions can affect an animal. Don’t approach any animal that is exhibiting fearful or aggressive body language. If you are unsure or uncomfortable, talk to your supervisor. Don’t handle any animal without permission. It’s a mistake to think that you can handle any animal because you have pets that love you. You cannot compare a shelter animal to your own pet. Always be cautious around the animals. Be honest in your knowledge and experience. Don’t exaggerate your animal handling skills. If you put yourself into a bad situation and get bitten, the animal may be labeled dangerous and be euthanized. The best way to avoid injury is to work within your skill range and understand your job.
+											</p>
+										</div>
+
+										<div class="clearfix"></div>
+								</li>
+
+							</ul>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="clearfix">
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<body class="auth-false">
+    <div class="container">
+      <header class="clearfix">
+        <h1>FILL THE DATA AND INVITE OTHERS TO BECOME VOLUNTEERS</h1>
+        <div class="emailContainer d-none">
+          <p>Howdy,Pale : <span id="emailUser"></span></p>
+        </div>
+        
+        <div class="loginContainer text-right">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registerModal">Register</button>
+          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#loginModal">Login</button>
+        </div>
+        <div class="logoutContainer d-none mt-2 text-right">
+          <button type="button" class="btn btn-danger" id="logoutBtn">Logout</button>
+        </div>
+      </header>
+
+      <hr/>
+
+      <main class="bookingContainer d-none text-center">
+          <button type="button" id="bookingBtn" class="btn btn-success mb-3" data-toggle="modal" data-target="#addContactModal">JOIN</button>
+          
+          <div id="contacts"></div> 
+
+          <table id="tabel-contacts" class="table table-striped table-bordered table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Reason Join</th>
+              
+                </tr>
+            </thead>
+
+            <tbody>
+             
+            </tbody>
+        </table>
+      </main>
+    </div>
+
+    <!-- Register modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="Register" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form id="registerForm" method="POST">
+           <div class="few-words" style=" background-color:#66CDAA;"> 
+           	<div class="modal-header">
+            	
+              <h4 class="modal-title" id="registerModalLabel">Register</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                <label for="recipient-name" class="control-label">Email:</label>
+                <input type="text" class="form-control" id="registerEmail">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="control-label">Password:</label>
+                <input type="password" class="form-control" id="registerPassword">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="control-label">Confirm Password:</label>
+                <input type="password" class="form-control" id="registerConfirmPassword">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary" id="doRegister">Register</button>
+            </div>
+      </div>
+          </form>
+        </div>  
+      </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form id="loginForm" method="POST">
+          	 <div class="few-words" style=" background-color:#66CDAA;"> 
+            <div class="modal-header">
+              <h4 class="modal-title" id="loginModalLabel">Login</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                <label for="recipient-name" class="control-label">Email:</label>
+                <input type="text" class="form-control" id="loginEmail">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="control-label">Password:</label>
+                <input type="password" class="form-control" id="loginPassword">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" id="loginBtn">Login</button>
+            </div>
+        </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Booking Modal -->
+    <div class="modal fade" id="addContactModal" tabindex="-1" role="dialog" aria-labelledby="Add Contact" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form method="POST" id="contactForm" name="contactForm">
+            <div class="modal-header">
+              <h4 class="modal-title" id="addContactModalLabel">LET'S JOIN TO BE VOLUNTEER</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+           <div class="few-words" style=" background-color:#66CDAA;">  
+           	<div class="modal-body">
+            	 
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name"  required placeholder="Enter name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" required placeholder="Enter Email">
+              </div>
+              <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" class="form-control" id="address" placeholder="Enter Address">
+              </div>
+              <div class="form-group">
+                <label for="pet">Reason Join</label>
+                <input type="text" class="form-control" id="pet" placeholder="Enter Reason">
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+              <button type="button" id="bookingAdd" class="btn btn-primary addValue">Submit</button>
+            </div>
+        </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Message Modal -->
+    <div class="modal fade" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="Message" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <h4 class="modal-title" id="messageModalLabel">Message</h4>
+          <div class="modal-header">  
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-footer">
+            <div class="pre-auth">
+              <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+              <span class="">
+                <button type="submit" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#registerModal">Register</button>
+                <button type="submit" class="btn btn-success" data-dismiss="modal" data-toggle="modal" data-target="#loginModal">Login</button>
+              </span>
+            </div>
+            <div class="post-auth"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+		<!--<div class="logo">
+			<h1><a href="Loginpage.html">KLICK HERE<span class="hlf"> TO BOOKING</span></a></h1>
+			</div>-->
+	</div>
+	</div>
+	</div>
+
+	<!-- Contacts Store JavaScript -->
+	 <script src="js/functions.js"></script>
+  <script type="text/javascript" src="js/functions.js"></script>
+</body>
+
+</html>
+
+<!--CRUD
+					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  					<div class="modal-dialog" role="document">
+  					<div class="modal-content">
+    				<div class="modal-header">
+    				<h5 class="modal-title" id="exampleModalLabel"></h5>
+     					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      						<span aria-hidden="true">&times;</span>
+							<br/>
+						<button>
+					<div class="few-words" style=" background-color:#66CDAA;">
+							<h3 style="text-align: center;"> Lets be a Volunteer! </h3>
+							<ul>
+									<form action="" method="POST" enctype="multipart/form-data">
+     								<div class="modal-body">     
+      								<input type="hidden" name="id" id="id">
+
+      								<div class="form-group">
+       								<label for="nama">Nama</label>
+									<input type="text" name="nama" id="nama" class="form-control" style="width: 400px"  placeholder="Masukkan nama" required="true">
+      								</div>
+								      <div class="form-group">
+								       <label for="email">Email</label>
+								       <input type="email" name="email" id="email" class="form-control" placeholder="Masukkan email" required="true">
+								      </div>
+								      <div class="form-group">
+								       <label for="alamat">Address</label>
+								       <input type="textarea" name="alamat" id="alamat" class="form-control" placeholder="Masukkan alamat" required="true">
+								      </div>
+								      <div class="form-group">
+								        <label for="alasan">Reason Join</label>
+								        <input type="textarea" name="alasan" id="alasan" class="form-control" placeholder="Masukkan Alasan" required="true">
+								      </div>
+								     </div>
+										<div class="modal-footer">
+								      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								      <button type="button" class="btn btn-primary" onclick="tambahData()" data-dismiss="modal">Save</button>
+								     </div>
+								
+								    </form>
+								</ul>
+							</div>
+						</div>
+								  </button> 
+						</div>
+						</div>
+						</div>
+						</div>
+									<div class="clearfix"></div>
+								</li>
+							</ul>
+						<br/><br/><br/>
+						<div class="container">
+						<div class="few-words" style=" background-color:#66CDAA;">
+						<h1>FORM VOLUNTEER</h1>
+ <button class="btn btn-primary btnTambahData" data-toggle="modal" onclick="cleardata()" data-target="#exampleModal">Add Data</button>
+ <table class="table table-striped" id="tbl_list_user">
+  <thead>
+   <tr>
+    <th scope="col">No.</th>
+    <th scope="col">Name</th>
+    <th scope="col">Email</th>
+    <th scope="col">Address</th>
+    <th scope="col">Reason</th>
+    <th scope="col">Action</th>
+   </tr>
+  </thead>
+ </table>
+</div>
+</div>
+</div>
+</div>
+ <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ <script src="js/jquery.easing.1.3.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+ <script src="js/hm.js"></script>
+ <script type="text/javascript">
+  var database = firebase.database();
+  var key = 0;
+
+  database.ref("users").orderByKey().limitToLast(1).on('child_added',function(data) {
+   key = parseInt(data.key, 10);
+   key = key + 1;
+  });
+
+  database.ref('users').on('value', function(snapshot) {
+   var count = 0;
+   if(snapshot.exists()){
+    $("#tbl_list_user tbody").remove(); 
+    var content = '<tbody>';
+    snapshot.forEach(function(data) {
+     count+=1;
+     var val = data.val();
+                 content +='<tr>';
+                 content += '<td>' + count + '</td>';
+                 content += '<td>' + val.username + '</td>';
+                 content += '<td>' + val.email + '</td>';
+                 content += '<td>' + val.address + '</td>';
+                 content += '<td>' + val.alasan + '</td>';
+                 content += '<td> <button class="btn btn-danger" onclick="hapusData(' + data.key + ')"> Delete Data </button> <button class="btn btn-primary tampilModalUbah" onclick="setData('+ data.key +')" data-toggle="modal" data-target="#exampleModal">Edit Data</button>  </td>';
+                 content +='</tr>';
+                 key = 0;
+     key = parseInt(data.key, 10);
+     key = key + 1;
+    });
+
+    content += '</tbody>';
+    $('#tbl_list_user').append(content);
+   }else{
+    $("#tbl_list_user tbody").remove(); 
+   }  
+  });
+
+
+  function tambahData(){
+   if($('#exampleModalLabel').text() == "Add New Data"){
+    if(key == 0){
+     key = 1;
+    }
+
+    database.ref('users/' + key).set({
+    username: $('#nama').val(),
+    email   : $('#email').val(),
+    address : $('#alamat').val(),
+    alasan  : $('#alasan').val()
+    });
+
+    alert("Hello New Partner");
+   }else if($('#exampleModalLabel').text() == "Edit Data"){
+    database.ref('users/' + $('#id').val()).update({
+     username: $('#nama').val(),
+     email   : $('#email').val(),
+     address : $('#alamat').val(),
+    alasan   : $('#alasan').val()
+    });
+    alert("Update Successful");
+   }
+  } 
+
+
+  function cleardata(){
+   $('#id').val("");
+   $('#nama').val("");
+   $('#email').val("");
+   $('#alamat').val("");
+   $('#alasan').val("");
+  }
+
+
+  function setData(id){
+   $('#exampleModalLabel').html('Edit Data');   
+   database.ref('users/').child(id).once('value').then( function(snap) {
+       const user = snap.val()
+       $('#id').val(id);
+    $('#nama').val(user.username);
+    $('#email').val(user.email);
+    $('#alamat').val(user.address);
+    $('#alasan').val(user.alasan);
+   });
+  }
+
+
+  function hapusData(id){
+   var answer = confirm("Delete Data..?");
+   if (answer) {
+       database.ref('users/' + id).remove();
+       alert("Delete Successful");
+   }
+  } 
+
+$('.btnTambahData').on('click', function(){
+        $('#exampleModalLabel').html('Add New Data');
+    });
+
+ </script>-->
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- <form>
+		<h1>join the volunter</h1>
+		<input type="text" name="name" id="name" placeholder="name lo wey" required /> <br/> <br/>
+		<input type="Email" name="Email" id="mail" placeholder="enter ur email here!"required /> <br/> <br/>
+		<input type="checkbox" name="check" id="ok" required> setuju dengan rules </input> 
+		<a href="#"> read the rules before checklis the checkbox gan!</a> <br/> <br/>
+		<button onclick="klik()">submit gaes</button>
+		
+		</form>
+
+		<table>
+			<h1>lets donate to abnodoned animals!</h1>
+			<tr>
+				<td>nama:</td>
+				<td><input type="text" name="nama" placeholder="ener ur name please" id="nama" required></td>
+			</tr>
+			<tr>
+				<td>email:</td>
+				<td><input type="email" name="email" placeholder="enter ur email here" id="email" required></td>
+			</tr>
+			<tr>
+				<td>no rek:</td>
+				<td><input type="num" name="norek" placeholder="norek" id="norek" required></td>
+			</tr>
+			<tr>
+				<td>location:</td>
+				<td><input type="text" name="location" placeholder="location" id="lokasi" required=""></td>
+			</tr>
+			<tr>
+				<td>price max:</td>
+				<td><input type="num" name="prmax" placeholder="price max" id="paramax" required></td>
+			</tr>
+			<tr>
+				<td>price min:</td>
+				<td><input type="num" name="prmin" placeholder="price min" id="pramin" required></td>
+			</tr>
+			<tr>
+			<button onclick="donate()">donate</button>
+			</tr>
+		</table> -->
+<!--footer-->
+<footer class="footer">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-sm-4 col-md-3 item">
+				<h3>ADDRESS</h3>
+				<span>Jahanam, </span><br />
+				<span>Wrong Way</span>
+				</ul>
+			</div>
+			<div class="col-sm-4 col-md-3 item">
+				<h3>COPY RIGHT&nbsp;</h3>
+				<span>©2020, Pet-Shop</span><br />
+				<span>Rizqy &amp; Novandro</span>
+				</ul>
+			</div>
+			<div class="col-sm-4 col-md-3 item">
+				<h3>CONTACT INFO</h3>
+				<span>Phone : 20188932</span><br />
+				<span>Email &nbsp;: pet-shop@gmail.com&nbsp;</span>
+			</div>
+		</div>
+	</div>
+</footer>
+<!--footer-->
+<!--
+		<script type="text/javascript">
+				$(document).ready(function() {
+						/*
+						var defaults = {
+						containerID: 'toTop', // fading element id
+						containerHoverID: 'toTopHover', // fading element hover id
+						scrollSpeed: 1200,
+						easingType: 'linear' 
+						};
+						*/
+				$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+		</script>-->
+<a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!---->
+</body>
+
+</html>
